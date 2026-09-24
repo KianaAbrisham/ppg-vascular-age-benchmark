@@ -1,0 +1,9 @@
+{
+  "source_notebooks_sha256": {
+    "Wiley-Digital.ipynb": "8a0e4e752ba74d10a1e96631b4a263affd11d6fcfd77dfd7ad1abd9eb5ea1e13",
+    "Wiley-Radial.ipynb": "2ec1580fe604f8fbfdb899966f21cef67c47b63478b4be8df8cfe0f17798227d"
+  },
+  "related_paper_doi": "10.1049/wss2.12103",
+  "exact_publication_reproduction_verified": false,
+  "original_notebooks_modified": false
+}

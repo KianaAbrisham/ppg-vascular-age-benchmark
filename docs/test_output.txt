@@ -1,0 +1,17 @@
+test_duplicate_id_fails (test_pipeline.DataTests.test_duplicate_id_fails) ... ok
+test_id_alignment (test_pipeline.DataTests.test_id_alignment) ... ok
+test_internal_missing_fails (test_pipeline.DataTests.test_internal_missing_fails) ... ok
+test_missing_id_fails (test_pipeline.DataTests.test_missing_id_fails) ... ok
+test_no_silent_cropping (test_pipeline.DataTests.test_no_silent_cropping) ... ok
+test_scaling_boundary (test_pipeline.DataTests.test_scaling_boundary) ... ok
+test_splits_disjoint_and_complete (test_pipeline.DataTests.test_splits_disjoint_and_complete) ... ok
+test_trailing_missing_padding (test_pipeline.DataTests.test_trailing_missing_padding) ... ok
+test_window_is_used (test_pipeline.DataTests.test_window_is_used) ... ok
+test_all_model_checkpoint_roundtrips (test_pipeline.ModelTests.test_all_model_checkpoint_roundtrips) ... /workspace/scratch/9793ff8eed97/tmp/ml-env/lib/python3.12/site-packages/keras/src/backend/tensorflow/core.py:171: DeprecationWarning: __array__ implementation doesn't accept a copy keyword, so passing copy=False failed. __array__ must implement 'dtype' and 'copy' keyword arguments. To learn more, see the migration guide https://numpy.org/devdocs/numpy_2_0_migration_guide.html#adapting-to-changes-in-the-copy-keyword
+  return np.array(x)
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 6.186s
+
+OK

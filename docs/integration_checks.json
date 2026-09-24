@@ -1,0 +1,9 @@
+{
+  "trained_checkpoint_prediction_roundtrips": [
+    "mlp",
+    "cnn1d",
+    "cnn2d",
+    "vgg16"
+  ],
+  "converter_roundtrip": "passed"
+}

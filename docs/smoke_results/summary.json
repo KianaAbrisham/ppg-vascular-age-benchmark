@@ -1,0 +1,111 @@
+{
+  "status": "artificial_data_software_check",
+  "folds": 2,
+  "models": {
+    "mlp": {
+      "accuracy": {
+        "mean": 0.16666666666666666,
+        "std": 0.0
+      },
+      "macro_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "weighted_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "latency_median_ms": {
+        "mean": 2.629518000048847,
+        "std": 0.3397803646918431
+      },
+      "latency_p95_ms": {
+        "mean": 3.1671163000169145,
+        "std": 0.7989444663312723
+      },
+      "checkpoint_mb": {
+        "mean": 1.070863,
+        "std": 0.0
+      }
+    },
+    "cnn1d": {
+      "accuracy": {
+        "mean": 0.16666666666666666,
+        "std": 0.0
+      },
+      "macro_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "weighted_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "latency_median_ms": {
+        "mean": 8.453415750011573,
+        "std": 0.19279443167856183
+      },
+      "latency_p95_ms": {
+        "mean": 9.260290750066247,
+        "std": 0.7846677683510939
+      },
+      "checkpoint_mb": {
+        "mean": 3.258554,
+        "std": 0.0
+      }
+    },
+    "cnn2d": {
+      "accuracy": {
+        "mean": 0.1527777777777778,
+        "std": 0.01964185503295964
+      },
+      "macro_f1": {
+        "mean": 0.0587725282847234,
+        "std": 0.01413087916237828
+      },
+      "weighted_f1": {
+        "mean": 0.0587725282847234,
+        "std": 0.01413087916237828
+      },
+      "latency_median_ms": {
+        "mean": 4.913982000033457,
+        "std": 0.3283570545833937
+      },
+      "latency_p95_ms": {
+        "mean": 6.17035007499851,
+        "std": 1.3437303252337476
+      },
+      "checkpoint_mb": {
+        "mean": 0.927468,
+        "std": 0.0
+      }
+    },
+    "vgg16": {
+      "accuracy": {
+        "mean": 0.16666666666666666,
+        "std": 0.0
+      },
+      "macro_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "weighted_f1": {
+        "mean": 0.047619047619047616,
+        "std": 0.0
+      },
+      "latency_median_ms": {
+        "mean": 24.6470385000066,
+        "std": 0.17031373929014243
+      },
+      "latency_p95_ms": {
+        "mean": 29.19029292501989,
+        "std": 1.473508531894802
+      },
+      "checkpoint_mb": {
+        "mean": 176.720349,
+        "std": 0.0
+      }
+    }
+  },
+  "interpretation": "Fold SD is not a confidence interval. Repeated model selection requires an independent final test or nested CV."
+}

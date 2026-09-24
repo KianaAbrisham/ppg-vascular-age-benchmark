@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the related paper when using this implementation."
+type: software
+title: "PPG Vascular Age Model Comparison"
+version: 0.1.0
+authors:
+  - family-names: "Pilevar Abrisham"
+    given-names: "Kiana"
+preferred-citation:
+  type: article
+  title: "Neural network models for predicting vascular age from PPG signals: A comparative study"
+  doi: "10.1049/wss2.12103"
+  year: 2025
+  authors:
+    - family-names: "Pilevar Abrisham"
+      given-names: "Kiana"
+    - family-names: "Alipour"
+      given-names: "Khalil"
+    - family-names: "Tarvirdizadeh"
+      given-names: "Bahram"
+    - family-names: "Ghamari"
+      given-names: "Mohammad"

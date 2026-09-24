@@ -1,0 +1,44 @@
+{
+  "project": "ppg-vascular-age-benchmark",
+  "status": "artificial_data_software_check",
+  "paper_reproduction_verified": false,
+  "arguments": {
+    "signals": "/workspace/scratch/9793ff8eed97/output/research-portfolio/ppg-vascular-age-benchmark/runs/notebook-demo/demo_input/signals.csv",
+    "targets": "/workspace/scratch/9793ff8eed97/output/research-portfolio/ppg-vascular-age-benchmark/runs/notebook-demo/demo_input/targets.csv",
+    "site": "synthetic",
+    "models": [
+      "mlp",
+      "cnn1d",
+      "cnn2d",
+      "vgg16"
+    ],
+    "demo": true,
+    "output": "/workspace/scratch/9793ff8eed97/output/research-portfolio/ppg-vascular-age-benchmark/runs/notebook-demo",
+    "length": 512,
+    "fs": 500,
+    "nperseg": 76,
+    "window": "hann",
+    "folds": 2,
+    "epochs": 1,
+    "patience": 10,
+    "batch_size": 32,
+    "weights": "none",
+    "seed": 42
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "tensorflow-cpu": "2.20.0",
+      "keras": "3.11.3",
+      "torch": "2.7.1+cpu",
+      "torchvision": "0.22.1+cpu"
+    }
+  },
+  "signals_sha256": "0c3f754777edf7c80ea66cf7ef795ebed67e19aff9139072a67298738fa4a60f",
+  "targets_sha256": "2fa28d4f4bd0ce51ca68893436c688f30add561916259715f9344ca392e12e5f"
+}
