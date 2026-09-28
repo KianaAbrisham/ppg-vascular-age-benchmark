@@ -7,7 +7,20 @@ Compare four neural network families for classifying **six age categories—25, 
 **Author:** [Kiana Pilevar Abrisham](https://github.com/KianaAbrisham)  
 **Related publication:** [Neural network models for predicting vascular age from PPG signals: A comparative study](https://doi.org/10.1049/wss2.12103) (2025)
 
-Refactored from the author's research notebooks into a TensorFlow/Keras workflow with explicit data checks and automated tests. All four model paths have completed software checks on artificial data. Full reproduction of the publication's numerical results has not been established. The task uses simulated age-category labels; its outputs are not measurements of continuous biological or vascular age.
+Refactored from the author's research notebooks into a TensorFlow/Keras workflow with explicit data checks and automated tests. MLP, CNN1D and CNN2D have completed five-fold evaluations on the public PWDB dataset at both digital and radial sites. [Results and reproducible commands](docs/PUBLIC_DATA_VALIDATION.md) are recorded, alongside the separate artificial-data checks for all four model paths. Full reproduction of every published result has not been established. The task uses simulated age-category labels; its outputs are not measurements of continuous biological or vascular age.
+
+## Public-data results
+
+| Site | Model | Current accuracy | Fold SD | Macro F1 | Published accuracy |
+| --- | --- | ---: | ---: | ---: | ---: |
+| Digital | mlp | 97.23% | 1.11 pp | 0.9722 | 92.7% |
+| Digital | cnn1d | 99.18% | 1.34 pp | 0.9917 | 99.4% |
+| Digital | cnn2d | 99.59% | 0.19 pp | 0.9959 | 99.6% |
+| Radial | mlp | 96.50% | 1.31 pp | 0.9651 | 95.3% |
+| Radial | cnn1d | 99.36% | 0.78 pp | 0.9936 | 99.3% |
+| Radial | cnn2d | 99.61% | 0.37 pp | 0.9961 | 99.6% |
+
+These are fresh evaluations of the refactored code on simulated PWDB profiles. See the [validation report](docs/PUBLIC_DATA_VALIDATION.md) for the protocol, predictions, software versions and differences from the original experiments.
 
 ## Models
 
@@ -53,6 +66,8 @@ The CSV contains `subject_id`, `predicted_age_category`, six `p_age_*` columns, 
 The [executed quickstart notebook](notebooks/01_quickstart.ipynb) includes training all four models, an inference example, and a confusion matrix. The [validation record](docs/VALIDATION.md) describes completed checks and GitHub Actions coverage.
 
 ## Use research data
+
+A verified downloader and converter is now available for the official release. See [public PWDB setup](docs/PUBLIC_DATA.md). For these converted files, use `--length 487` and `--fs 500`.
 
 The related study uses [PWDB](https://zenodo.org/records/3275625), an in-silico dataset of virtual adults. Original research CSV exports and paper-trained checkpoints are not included. `prepare_data.py` converts existing wide CSV exports; it does not download or process the raw PWDB release automatically.
 

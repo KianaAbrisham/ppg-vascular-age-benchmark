@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "site": "digital",
+      "model": "mlp",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "not applicable"
+    },
+    {
+      "site": "digital",
+      "model": "cnn1d",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "not applicable"
+    },
+    {
+      "site": "digital",
+      "model": "cnn2d",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "passed"
+    },
+    {
+      "site": "radial",
+      "model": "mlp",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "not applicable"
+    },
+    {
+      "site": "radial",
+      "model": "cnn1d",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "not applicable"
+    },
+    {
+      "site": "radial",
+      "model": "cnn2d",
+      "folds": 5,
+      "oof_subjects": 4374,
+      "split_isolation": "passed",
+      "scores_recomputed": "passed",
+      "probability_integrity": "passed",
+      "saved_inference": "80 held-out records passed",
+      "cnn2d_training_only_scaler": "passed"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source_head": "d447edd0cfe2e39335a8e3ff8af05223b84d506f",
+  "sha256": {
+    "ppg/__init__.py": "1c4b0d1b922bdb5f4516e4c537cff6562a2c71e05415e7bccb9fb8cf8fe976ad",
+    "ppg/common.py": "2e05e8523acc8a9bd3807c975a90ee5013341aecc1c83102c385b8266a7a54e8",
+    "ppg/engine.py": "d138221dd72d3dc1e2fa64547305af15e56156cedc3a91890e13b5a9a8a02011",
+    "ppg/models.py": "817dbdaa2d183cd32189cf17bfd1329cdfc11d17e4507fbec0aa9496de090ffc",
+    "ppg/prediction.py": "40b71b43198df34f4359655af1cffb496c2b6d57aa5b40a3e73eae2ff80516c1",
+    "ppg/settings.py": "282997a8a8c779ef8d464d01068e44343d0bd51dd52d61de21300da9b61a7b79",
+    "ppg/training.py": "8ca50774091dd025ab05c162c94eb277a4ce9dd0afffc177d21a6f95fb5f0121"
+  }
+}

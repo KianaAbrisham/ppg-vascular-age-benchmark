@@ -1,6 +1,6 @@
 # Validation record
 
-This record distinguishes completed software checks from full research evaluation. Documentation was updated on **2026-09-27**; the recorded local checks and GitHub Actions run below were completed on **2026-09-24**.
+Updated **2026-09-28**. Six full five-fold public-PWDB evaluations are complete; see the [public-data results](PUBLIC_DATA_VALIDATION.md). The earlier local software checks and GitHub Actions run documented below were completed on **2026-09-24** and are retained as historical evidence.
 
 ## Local validation
 
@@ -48,6 +48,14 @@ The unit test suite checks native checkpoint serialization for all four architec
 
 ## Coverage limits
 
-Original research CSV exports, paper-trained checkpoints, and a complete final experiment record were unavailable. Full PWDB experiments, ImageNet-initialized VGG16 training, and reproduction of the publication's numerical results have not been verified. GPU, Windows, and macOS execution have not been validated. Softmax probability calibration and performance on patient or wearable recordings have not been evaluated.
+The original research CSV exports, paper-trained checkpoints, and a complete final experiment record remain unavailable. Fresh public-PWDB five-fold evaluations are complete for MLP, CNN1D and CNN2D at both digital and radial sites. Public-data VGG16 training, ImageNet-initialized training, and full-paper numerical reproduction remain unverified. GPU, Windows, and macOS execution have not been validated. Softmax probability calibration and performance on patient or wearable recordings have not been evaluated.
 
 Before reporting research results, verify subject identity, artery, waveform format, and age labels, then retain the full experiment's configuration, input hashes, subject splits, preprocessing, checkpoints, and held-out predictions. See the [research notes](RESEARCH_NOTES.md) for changes from the source notebooks.
+
+## Public-source conversion verified — 2026-09-28
+
+The official PWDB v0.2 waveform archive, haemodynamic targets and provided fiducials were downloaded and verified against publisher checksums. All 4,374 subject IDs were aligned explicitly, all waveform values passed a CSV round-trip check, and the target units and sampling rate were checked against the source documentation. Four additional tests verify shuffled-ID alignment and rejection of duplicate IDs, missing subjects and corrupt cached downloads. See [public data setup](PUBLIC_DATA.md) and the [conversion manifest](public_data/conversion_manifest.json). These checks validate data preparation; they do not establish numerical reproduction of a paper.
+
+## Full public-data evaluations
+
+Six five-fold model/site evaluations are now complete. See the [2026-09-28 report](PUBLIC_DATA_VALIDATION.md) for scores, subject counts and independent checks. VGG16 public-data training and full-paper reproduction remain unverified.
