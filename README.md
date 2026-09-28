@@ -127,3 +127,9 @@ Fold standard deviations describe variation across folds; they are not confidenc
 | [`.github/workflows/checks.yml`](.github/workflows/checks.yml) | CPU tests and MLP training demo |
 
 Citation metadata are available in [`CITATION.cff`](CITATION.cff). Performance on simulated age categories alone does not establish performance on patient or wearable recordings.
+
+## Research provenance and development
+
+The benchmark brings together Kiana Pilevar Abrisham's vascular-age research notebooks. AI coding assistance was used for implementation and refactoring, shared split and preprocessing checks, documentation, and execution of the recorded evaluations. The [research notes](docs/RESEARCH_NOTES.md) identify changes from the source experiments, and the [public-data report](docs/PUBLIC_DATA_VALIDATION.md) records which model/site evaluations are complete.
+
+Recorded checks were run in a hosted Linux CPU environment. See the [portfolio development notes](https://github.com/KianaAbrisham/KianaAbrisham/blob/main/docs/DEVELOPMENT.md) for execution provenance and the scope of AI assistance.

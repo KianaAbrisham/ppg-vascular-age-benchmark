@@ -59,3 +59,7 @@ The official PWDB v0.2 waveform archive, haemodynamic targets and provided fiduc
 ## Full public-data evaluations
 
 Six five-fold model/site evaluations are now complete. See the [2026-09-28 report](PUBLIC_DATA_VALIDATION.md) for scores, subject counts and independent checks. VGG16 public-data training and full-paper reproduction remain unverified.
+
+## Execution provenance
+
+The recorded checks were executed with AI coding assistance in a hosted Linux CPU environment. Absolute `/workspace/scratch/` paths in saved logs and configurations identify that historical runtime. They are preserved as execution evidence; the README commands use paths relative to the repository. This documentation and formatting update does not alter the saved metrics, notebook outputs, or source hashes for those runs.
