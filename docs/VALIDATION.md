@@ -29,7 +29,7 @@ Evidence:
 - [`../notebooks/01_quickstart.ipynb`](../notebooks/01_quickstart.ipynb): executed training of all four models, MLP inference, and a confusion matrix.
 - [`provenance.json`](provenance.json): source notebook hashes and reproduction status.
 
-All recorded training used **72 artificial software-fixture waveforms**, with 12 examples per class, 512 samples per waveform, one epoch per fold, and random initialization. These checks exercise data flow, training, evaluation, and checkpoint reuse. They do not establish convergence, model rankings, published accuracy, physiological simulation quality, or clinical performance.
+The local software checks above used **72 artificial software-fixture waveforms**, with 12 examples per class, 512 samples per waveform, one epoch per fold, and random initialization. These checks exercise data flow, training, evaluation, and checkpoint reuse. They do not establish convergence, model rankings, published accuracy, physiological simulation quality, or clinical performance.
 
 Paths inside the recorded configuration identify the original validation runtime. Large model checkpoints are excluded from the repository and can be regenerated with the four-model demo command in the README.
 
@@ -59,7 +59,3 @@ The official PWDB v0.2 waveform archive, haemodynamic targets and provided fiduc
 ## Full public-data evaluations
 
 Six five-fold model/site evaluations are now complete. See the [2026-09-28 report](PUBLIC_DATA_VALIDATION.md) for scores, subject counts and independent checks. VGG16 public-data training and full-paper reproduction remain unverified.
-
-## Execution provenance
-
-The recorded checks were executed with AI coding assistance in a hosted Linux CPU environment. Absolute `/workspace/scratch/` paths in saved logs and configurations identify that historical runtime. They are preserved as execution evidence; the README commands use paths relative to the repository. This documentation and formatting update does not alter the saved metrics, notebook outputs, or source hashes for those runs.

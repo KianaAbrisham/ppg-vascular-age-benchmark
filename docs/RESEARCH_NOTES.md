@@ -60,7 +60,7 @@ Research mode uses five stratified outer folds. Within each outer training parti
 
 The demo's 72 artificial waveforms are independent software fixtures, not PWDB records. One-epoch demo results cannot establish model superiority or reproduce the paper. Fold standard deviations are not confidence intervals, and repeated model selection requires nested cross-validation or a separate final test set.
 
-The original final CSV exports, paper-trained checkpoints, and complete final experiment record were unavailable. Saved values in an old notebook do not by themselves establish that every cell belongs to the publication's final experiment. No published metric is presented as a result of this implementation.
+The original final CSV exports, paper-trained checkpoints, and complete final experiment record were unavailable. Current results and evaluation scope are documented in the [validation record](VALIDATION.md).
 
 Before reporting research scores, verify subject/site correspondence, waveform sample order, sampling rate, and age labels. Retain input hashes, split IDs, configuration, preprocessing, and checkpoints. Hardware and library versions can affect exact numerical reproducibility. See the [validation record](VALIDATION.md) for completed checks. Performance on simulated age categories does not establish performance on wearable or patient recordings.
 
